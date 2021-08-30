@@ -20,6 +20,18 @@ require('lspconfig').pyright.setup{}
 --- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#clangd
 require('lspconfig').clangd.setup{}
 
+-- go -->  gopls
+--- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#gopls
+require'lspconfig'.gopls.setup{}
+
+-- nix --> rnix
+--- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rnix
+require'lspconfig'.rnix.setup{}
+
+-- rust --> rust-analyzer
+--- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rnix
+require'lspconfig'.rust_analyzer.setup{}
+
 -- HTML, CSS, JavaScript --> vscode-html-languageserver
 --- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
 --- Enable (broadcasting) snippet capability for completion
