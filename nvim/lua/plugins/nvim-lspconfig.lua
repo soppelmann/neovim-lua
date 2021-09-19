@@ -24,12 +24,16 @@ require('lspconfig').clangd.setup{}
 --- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#gopls
 require'lspconfig'.gopls.setup{}
 
+-- haskell --> hls
+--- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#hls
+require'lspconfig'.hls.setup{}
+
 -- nix --> rnix
 --- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rnix
 require'lspconfig'.rnix.setup{}
 
 -- rust --> rust-analyzer
---- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rnix
+--- https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rust_analyzer
 require'lspconfig'.rust_analyzer.setup{}
 
 -- HTML, CSS, JavaScript --> vscode-html-languageserver

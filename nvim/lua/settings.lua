@@ -26,6 +26,7 @@ opt.swapfile = false          -- don't use swapfile
 -----------------------------------------------------------
 opt.syntax = 'enable'         -- enable syntax highlighting
 opt.number = true             -- show line number
+opt.relativenumber = true     -- show relative line number
 opt.showmatch = true          -- highlight matching parenthesis
 opt.foldmethod = 'marker'     -- enable folding (default 'foldmarker')
 opt.colorcolumn = '80'        -- line lenght marker at 80 columns
@@ -57,8 +58,15 @@ opt.synmaxcol = 240       -- max column for syntax highlight
 -- Colorscheme
 -----------------------------------------------------------
 opt.termguicolors = true          -- enable 24-bit RGB colors
+--vim.g['everforest_background'] = 'hard' -- set style of colorscheme
+opt.background = 'light' --set style of colorscheme
+--cmd[[colorscheme everforest]]        -- set colorscheme
+--cmd[[colorscheme nofrils-acme]]        -- set colorscheme
 cmd[[colorscheme molokai]]        -- set colorscheme
-
+--cmd[[colorscheme gruvbox]]        -- set colorscheme
+opt.background = 'light' --set style of colorscheme
+--require('monokai')
+--vim.cmd('colorscheme monokai')
 -----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------

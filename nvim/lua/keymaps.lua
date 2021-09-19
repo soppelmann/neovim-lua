@@ -9,14 +9,24 @@ local default_opts = {noremap = true, silent = true}
 -----------------------------------------------------------
 -- Neovim shortcuts:
 -----------------------------------------------------------
--- basic autopair
-map('i', '"', '""<left>', default_opts)
-map('i', '`', '``<left>', default_opts)
-map('i', '(', '()<left>', default_opts)
-map('i', '[', '[]<left>', default_opts)
-map('i', '{', '{}<left>', default_opts)
-map('i', '{<CR>', '{<CR}<ESC>0', default_opts)
-map('i', '{;<CR>', '{<CR};<ESC>0', default_opts)
+-- -- basic autopair
+-- map('i', '"', '""<left>', default_opts)
+-- map('i', '`', '``<left>', default_opts)
+-- map('i', '(', '()<left>', default_opts)
+-- map('i', '[', '[]<left>', default_opts)
+-- map('i', '{', '{}<left>', default_opts)
+-- map('i', '{<CR>', '{<CR}<ESC>0', default_opts)
+-- map('i', '{;<CR>', '{<CR};<ESC>0', default_opts)
+
+-- Move between buffers
+--nnoremap <silent>[b :BufferLineCycleNext<CR>
+--nnoremap <silent>b] :BufferLineCyclePrev<CR>
+map('', '<C-Tab>', ':BufferLineCycleNext<CR>', default_opts)
+map('', '<S-C-Tab>', ':BufferLineCyclePrev<CR>', default_opts)
+
+-- Close buffer
+map('', '<C-q>', ':Bdelete<CR>', default_opts)
+
 
 -- clear search highlighting
 map('n', '<leader>c', ':nohl<CR>', default_opts)

@@ -9,9 +9,9 @@
 
 Neovim init file
 
-Version: 0.9.0_alpha - 2021/08/29
-Maintainer: Brainf+ck
-Website: https://github.com/brainfucksec/neovim-lua
+Version: 1
+Maintainer: none
+Forked: https://github.com/brainfucksec/neovim-lua
 
 --]]
 
@@ -23,7 +23,9 @@ require('keymaps')                -- keymaps
 require('plugins/paq-nvim')       -- plugin manager
 require('plugins/nvim-tree')	    -- file manager
 require('plugins/lualine')        -- statusline
-require('plugins/whichkey')        -- whichkey
 require('plugins/nvim-cmp')       -- autocomplete
+require('plugins/nvim-bufferline') -- tabs
 require('plugins/nvim-lspconfig') -- LSP settings
+require('plugins/nvim-treesitter')-- treesitter
 require('plugins/vista')          -- tag viewer
+require('plugins/whichkey')       -- whichkey
